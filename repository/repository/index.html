@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A birthday tribute to Dr. S. Banu Chitra Mam - a teacher by profession, a mother by heart.">
+<title>The Legacy of Dr. S. Banu Chitra Mam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-rose"></div>
+  <div class="loader-text">Loading A Story Of Inspiration...</div>
+  <div class="loader-text second">The Legacy Of Dr. S. Banu Chitra Mam</div>
+</div>
+
+<!-- COUNTDOWN SCREEN -->
+<div id="countdown-screen">
+  <div class="countdown-eyebrow">Something Special Is Coming</div>
+  <h1 class="countdown-title">A Tribute Awaits Dr. S. Banu Chitra Mam</h1>
+  <p class="countdown-sub">Unlocking on 25 September — Her Birthday ❤️</p>
+  <div class="countdown-timer">
+    <div class="countdown-box"><div class="num" id="cd-days">00</div><div class="label">Days</div></div>
+    <div class="countdown-box"><div class="num" id="cd-hours">00</div><div class="label">Hours</div></div>
+    <div class="countdown-box"><div class="num" id="cd-mins">00</div><div class="label">Minutes</div></div>
+    <div class="countdown-box"><div class="num" id="cd-secs">00</div><div class="label">Seconds</div></div>
+  </div>
+  <button id="peekBtn" class="btn"><i class="fa-solid fa-eye"></i> Peek Inside</button>
+</div>
+
+<!-- AMBIENT PARTICLES -->
+<div id="particles"></div>
+
+<!-- MUSIC TOGGLE -->
+<button id="music-toggle" aria-label="Toggle background music">
+  <i class="fa-solid fa-music"></i>
+</button>
+<audio id="bg-audio" loop>
+  <!-- Add your piano music file here -->
+  <source src="audio/piano.mp3" type="audio/mpeg">
+</audio>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-photo"><img src="images/hero-portrait.jpg" alt="Dr. S. Banu Chitra Mam" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+  <div class="hero-anim-line" id="heroAnim"></div>
+  <h1 class="hero-title">THE LEGACY OF<br>DR. S. BANU CHITRA MAM</h1>
+  <p class="hero-sub">A Teacher By Profession</p>
+  <p class="hero-sub">A Mother By Heart</p>
+  <div class="hero-meta">Head of Department — BCA & MCA &nbsp;|&nbsp; NPRGI</div>
+  <div class="hero-credit">Created With Love, Respect & Gratitude By<br><strong>Kamalika S ❤️</strong></div>
+  <div class="hero-buttons">
+    <button id="journeyBtn" class="btn"><i class="fa-solid fa-heart"></i> Discover Her Journey</button>
+    <a href="#gallery" class="btn"><i class="fa-solid fa-spa"></i> View Memories</a>
+    <a href="#why-mom" class="btn"><i class="fa-solid fa-star"></i> Why I Call Mam Mom</a>
+  </div>
+  <div class="scroll-cue"><i class="fa-solid fa-chevron-down"></i></div>
+</section>
+
+<!-- HER JOURNEY OVERLAY -->
+<div id="journeyOverlay" class="journey-overlay">
+  <button id="journeyClose" class="journey-close" aria-label="Close">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <div class="journey-inner">
+    <div class="eyebrow" style="color:var(--gold);">Her Story</div>
+    <h2 class="section-title" style="color:#F7E1E1;">Her Journey</h2>
+    <div class="journey-story">
+      <p>For more than 18 years, Dr. S. Banu Chitra Mam has walked a path of dedication, sacrifice, and quiet strength.</p>
+      <p>From the very first day in the classroom, Mam carried a simple belief: that every student deserves to be seen, guided, and believed in.</p>
+      <p>Through challenges, pain, and countless responsibilities, Mam never stopped showing up — for her family, for her students, and for everyone who needed her.</p>
+      <p>This is the story of a teacher who became family.</p>
+    </div>
+    <div class="timeline journey-timeline">
+      <div class="timeline-item"><h4>🎂 Born — 25 September 1982</h4><p>The beginning of a remarkable journey.</p></div>
+      <div class="timeline-item"><h4>🎓 Dedicated Life To Education</h4><p>Choosing a path of teaching and guidance.</p></div>
+      <div class="timeline-item"><h4>👩‍🏫 Inspired Students</h4><p>Shaping minds and building confidence.</p></div>
+      <div class="timeline-item"><h4>🏆 Best Role Model Teacher</h4><p>Recognized for excellence and care.</p></div>
+      <div class="timeline-item"><h4>❤️ Guided Countless Students</h4><p>A mentor to generations of learners.</p></div>
+      <div class="timeline-item"><h4>🌟 Head Of Department — BCA & MCA</h4><p>Leading with vision at NPRGI.</p></div>
+    </div>
+    <button class="btn journey-continue" id="journeyContinue"><i class="fa-solid fa-arrow-down"></i> Continue To The Tribute</button>
+  </div>
+</div>
+
+<!-- SECTION 2 -->
+<section id="who-is">
+  <div class="section-inner">
+    <div class="eyebrow">An Introduction</div>
+    <h2 class="section-title">Who Is Dr. S. Banu Chitra Mam?</h2>
+    <div class="glass-card floaty" data-aos="fade-up">
+      <p>Dr. S. Banu Chitra Mam is more than an educator.</p>
+      <p>Mam is a mentor. Mam is a guide. Mam is a leader. Mam is a source of inspiration.</p>
+      <p>For more than 18 years, Mam has dedicated herself to shaping futures and inspiring students.</p>
+      <p>Mam's journey is a story of strength, dedication, sacrifice, kindness, and love.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section>
+  <div class="section-inner">
+    <div class="eyebrow">Behind The Achievements</div>
+    <h2 class="section-title">The Strength Behind The Smile</h2>
+    <div class="split-wrap">
+      <div class="split-card see" data-aos="fade-right">
+        <h3>What We See</h3>
+        <ul>
+          <li><i class="fa-solid fa-book-open"></i> Educator</li>
+          <li><i class="fa-solid fa-chalkboard-user"></i> Mentor</li>
+          <li><i class="fa-solid fa-trophy"></i> Leader</li>
+          <li><i class="fa-solid fa-heart"></i> Role Model</li>
+        </ul>
+      </div>
+      <div class="split-card unseen" data-aos="fade-left">
+        <h3>What We Don't See</h3>
+        <ul>
+          <li><i class="fa-solid fa-heart-crack"></i> Back Pain</li>
+          <li><i class="fa-solid fa-heart-crack"></i> Hand Pain</li>
+          <li><i class="fa-solid fa-heart-crack"></i> Career Challenges</li>
+          <li><i class="fa-solid fa-heart-crack"></i> Personal Sacrifices</li>
+        </ul>
+      </div>
+    </div>
+    <div class="split-quote" data-aos="fade-up">
+      Many people see Dr. S. Banu Chitra Mam's achievements.<br>
+      Very few see the sacrifices behind them.<br><br>
+      Despite challenges... Mam continued teaching.<br>
+      Despite pain... Mam continued guiding students.<br>
+      Despite responsibilities... Mam continued inspiring lives.
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 -->
+<section>
+  <div class="section-inner">
+    <div class="eyebrow">Family First</div>
+    <h2 class="section-title">A Mother To Her Family</h2>
+    <div class="glass-card" data-aos="zoom-in">
+      <i class="fa-solid fa-house-chimney-heart" style="font-size:2.2rem; color:var(--rose-gold); display:block; text-align:center; margin-bottom:20px;"></i>
+      <p>Dr. S. Banu Chitra Mam balanced family responsibilities while supporting the education and future of her children.</p>
+      <p>Mam fulfilled every responsibility with patience, dedication, and love.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 -->
+<section>
+  <div class="section-inner">
+    <div class="eyebrow">Beyond The Classroom</div>
+    <h2 class="section-title">A Mother To Her Students</h2>
+    <div class="glass-card" data-aos="fade-up">
+      <p><i class="fa-solid fa-heart" style="color:var(--rose-gold);"></i> Many teachers teach. Dr. S. Banu Chitra Mam cared.</p>
+      <p>Students entered the classroom looking for knowledge.</p>
+      <p>They left carrying confidence, encouragement, and hope.</p>
+      <p>For countless students, Mam became much more than an educator. Mam became family.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6 KERALA -->
+<section>
+  <div class="section-inner kerala-wrap">
+    <div class="eyebrow">A Cherished Trip</div>
+    <h2 class="section-title"> Memories</h2>
+    <div class="img-placeholder" data-aos="fade-up"><img src="images/kerala-trip.jpg" alt="Kerala Memories" style="width:100%;height:100%;object-fit:cover;border-radius:24px;"></div>
+    <div class="glass-card" style="max-width:650px;" data-aos="fade-up">
+      <p>Trip gave me beautiful memories.</p>
+      <p>But the most beautiful memory was spending time with Mom.</p>
+      <p>Whenever I was unwell, Mom cared. Whenever I needed support, Mom was there.</p>
+      <p>Those memories will remain in my heart forever.</p>
+    </div>
+    <a href="#gallery" class="btn" data-aos="fade-up"><i class="fa-solid fa-tree"></i> View Kerala Memories</a>
+  </div>
+</section>
+
+<!-- SECTION 7 WHY MOM -->
+<section id="why-mom">
+  <div class="reveal-section" data-aos="zoom-in">
+    <div class="eyebrow" style="color:var(--gold);">A Personal Truth</div>
+    <h2 class="section-title">Why I Call Mam "Mom"</h2>
+    <button id="revealBtn"><i class="fa-solid fa-heart"></i> Click To Reveal</button>
+    <div id="revealContent">
+      <p>Many people know Mam as a Head of Department.</p>
+      <p>Many people know Mam as an educator.</p>
+      <p>Many people know Mam as a leader.</p>
+      <p>But I know Mam as someone who cared for me.</p>
+      <p>That is why I proudly call Mam...</p>
+      <div class="mom-word">MOM ❤️</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8 TIMELINE -->
+<section>
+  <div class="section-inner">
+    <div class="eyebrow">Her Path</div>
+    <h2 class="section-title">Journey Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right"><h4>🎂 Born — 25 September 1982</h4><p>The beginning of a remarkable journey.</p></div>
+      <div class="timeline-item" data-aos="fade-right"><h4>🎓 Dedicated Life To Education</h4><p>Choosing a path of teaching and guidance.</p></div>
+      <div class="timeline-item" data-aos="fade-right"><h4>👩‍🏫 Inspired Students</h4><p>Shaping minds and building confidence.</p></div>
+      <div class="timeline-item" data-aos="fade-right"><h4>🏆 Best Role Model Teacher</h4><p>Recognized for excellence and care.</p></div>
+      <div class="timeline-item" data-aos="fade-right"><h4>❤️ Guided Countless Students</h4><p>A mentor to generations of learners.</p></div>
+      <div class="timeline-item" data-aos="fade-right"><h4>🌟 Head Of Department — BCA & MCA</h4><p>Leading with vision at NPRGI.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9 GALLERY -->
+<section id="gallery">
+  <div class="section-inner">
+    <div class="eyebrow">Moments Captured</div>
+    <h2 class="section-title">Photo Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item" data-aos="fade-up"><img src="images/gallery-01.jpg" alt="Gallery photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="gallery-caption"><span>The Woman Behind Countless Success Stories</span></div></div>
+      <div class="gallery-item" data-aos="fade-up"><img src="images/gallery-02.jpg" alt="Gallery photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="gallery-caption"><span>Strength Beyond Words</span></div></div>
+      <div class="gallery-item" data-aos="fade-up"><img src="images/gallery-03.jpg" alt="Gallery photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="gallery-caption"><span>A Teacher By Profession</span></div></div>
+      <div class="gallery-item" data-aos="fade-up"><img src="images/gallery-04.jpg" alt="Gallery photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="gallery-caption"><span>A Mother By Heart</span></div></div>
+      <div class="gallery-item" data-aos="fade-up"><img src="images/gallery-05.jpg" alt="Gallery photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="gallery-caption"><span>The Heart That Cares</span></div></div>
+      <div class="gallery-item" data-aos="fade-up"><img src="images/gallery-06.jpg" alt="Gallery photo" loading="lazy" style="width:100%;height:100%;object-fit:cover;"><div class="gallery-caption"><span>An Inspiration To Many</span></div></div>
+     
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 10 TESTIMONIALS -->
+<section>
+  <div class="section-inner">
+    <div class="eyebrow">In Their Words</div>
+    <h2 class="section-title">Student Tribute Wall</h2>
+    <div class="testimonial-track" data-aos="fade-up">
+      <div class="t-card"><i class="fa-solid fa-quote-left"></i><p>Mam never made me feel like just another student. She made me feel seen.</p><div class="t-name">— A Grateful Student</div></div>
+      <div class="t-card"><i class="fa-solid fa-quote-left"></i><p>Whenever I doubted myself, Mam's words reminded me of my worth.</p><div class="t-name">— BCA Batch</div></div>
+      <div class="t-card"><i class="fa-solid fa-quote-left"></i><p>Mam taught us subjects, but more importantly, she taught us values.</p><div class="t-name">— MCA Batch</div></div>
+      <div class="t-card"><i class="fa-solid fa-quote-left"></i><p>Her patience and kindness shaped how I see mentorship today.</p><div class="t-name">— A Proud Alumnus</div></div>
+      <div class="t-card"><i class="fa-solid fa-quote-left"></i><p>Mam, you are the reason many of us believed in ourselves.</p><div class="t-name">— With Gratitude</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUESTBOOK WALL -->
+<section id="guestbook">
+  <div class="section-inner">
+    <div class="eyebrow">A Collective Celebration</div>
+    <h2 class="section-title">Guestbook Wall</h2>
+    <div class="guestbook-track" id="guestbookTrack" data-aos="fade-up">
+      <div class="g-card"><i class="fa-solid fa-heart"></i><p>Happy Birthday Mam! Thank you for everything you've taught us, in and out of the classroom.</p><div class="g-name">— A Student</div></div>
+      <div class="g-card"><i class="fa-solid fa-heart"></i><p>Wishing you a year full of joy, health, and happiness, Mam. You deserve all the love in the world.</p><div class="g-name">— Well Wisher</div></div>
+      <div class="g-card"><i class="fa-solid fa-heart"></i><p>Your kindness has touched so many lives. Happy Birthday to the best HOD!</p><div class="g-name">— BCA Department</div></div>
+    </div>
+    <div class="guestbook-form">
+      <p>Add your own birthday wish for Mam 🌹</p>
+      <input type="text" id="gbName" placeholder="Your Name" maxlength="40">
+      <textarea id="gbMsg" rows="3" placeholder="Write your birthday wish or memory..." maxlength="300"></textarea>
+      <button class="btn" id="gbSubmit"><i class="fa-solid fa-paper-plane"></i> Add To The Wall</button>
+      <div id="guestbookMsg"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 11 LETTER -->
+<section>
+  <div class="section-inner letter-wrap">
+    <div class="eyebrow">From The Heart</div>
+    <h2 class="section-title">Letter To Mom</h2>
+    <p class="envelope-hint">Click the envelope to open</p>
+    <div class="envelope" id="envelope" data-aos="zoom-in">
+      <div class="envelope-body"><i class="fa-solid fa-heart envelope-heart"></i></div>
+      <div class="envelope-flap"></div>
+    </div>
+    <div class="letter-content" id="letterContent">
+      <p>Dear Mom,</p>
+      <p>Thank you for every lesson. Thank you for every word of encouragement. Thank you for every moment of care. Thank you for believing in me. Thank you for becoming family.</p>
+      <p>The day I started calling Mam "Mom" was not because Mam taught me. It was because Mom cared for me.</p>
+      <p class="sign">With Love,<br>Kamalika S ❤️</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATE -->
+<section class="certificate-wrap">
+  <div class="section-inner">
+    <div class="eyebrow">A Keepsake</div>
+    <h2 class="section-title">A Special Recognition</h2>
+    <div class="certificate" id="certificate" data-aos="zoom-in">
+      <div class="cert-seal"><i class="fa-solid fa-award"></i></div>
+      <h3>Certificate of Appreciation</h3>
+      <div class="cert-sub">Presented With Love</div>
+      <div class="cert-name">Dr. S. Banu Chitra Mam</div>
+      <div class="cert-body">
+        <p>In recognition of 18+ years of dedication, guidance, and love.<br>
+        For being a teacher who became family, and a mentor who became Mom.</p>
+        <p>Awarded the title of <strong>"Mom Of The Year"</strong> — Forever and Always.</p>
+      </div>
+      <div class="cert-footer">
+        <span>Date: 25 September</span>
+        <span>With Love, Kamalika S ❤️</span>
+      </div>
+    </div>
+    <button class="btn" id="printCert" style="margin-top:30px;"><i class="fa-solid fa-print"></i> Print / Save Certificate</button>
+  </div>
+</section>
+
+<!-- FINAL SECTION -->
+<section class="final-section">
+  <div class="final-lines" id="finalLines">
+    <p>The world knows Mam as an educator.</p>
+    <p>NPRGI knows Mam as a leader.</p>
+    <p>Students know Mam as a mentor.</p>
+    <p>I know Mam as Mom.</p>
+  </div>
+  <h2 class="final-title">HAPPY BIRTHDAY MOM ❤️</h2>
+  <h3 class="final-name">DR. S. BANU CHITRA MAM</h3>
+  <p class="final-sub">A Teacher By Profession</p>
+  <p class="final-sub">A Mother By Heart</p>
+  <div class="final-credit">
+    <small>With Endless Love, Respect & Gratitude</small>
+    <strong>KAMALIKA S ❤️</strong>
+  </div>
+</section>
+
+<footer>
+  Made with ❤️ for Dr. S. Banu Chitra Mam — NPRGI, Department of BCA & MCA
+</footer>
+
+<!-- CONFETTI CANVAS -->
+<canvas id="confetti-canvas" style="position:fixed; inset:0; pointer-events:none; z-index:9998;"></canvas>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
